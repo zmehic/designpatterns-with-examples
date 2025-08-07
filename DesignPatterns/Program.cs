@@ -1,7 +1,11 @@
-﻿using DesignPatterns.Decorator;
+﻿//using DesignPatterns.Decorator;
+//using DesignPatterns.Factory.SimpleFactory;
+
+
 //using DesignPatterns.Observer;
 //using DesignPatterns.Strategy;
-using DesignPatterns.Strategy.Consumption;
+using DesignPatterns.Factory.FactoryMethod;
+using DesignPatterns.Singleton;
 
 // Strategy
 
@@ -34,8 +38,24 @@ using DesignPatterns.Strategy.Consumption;
 
 // Decorator
 
-Vehicle vehicle = new AudiA4();
-Console.WriteLine($"{vehicle.GetDescription()} - {vehicle.Cost()}");
-vehicle = new SunRoof(vehicle);
-vehicle = new SeatHeating(vehicle);
-Console.WriteLine($"{vehicle.GetDescription()} - {vehicle.Cost()}");
+//Vehicle vehicle = new AudiA4();
+//Console.WriteLine($"{vehicle.GetDescription()} - {vehicle.Cost()}");
+//vehicle = new SunRoof(vehicle);
+//vehicle = new SeatHeating(vehicle);
+//Console.WriteLine($"{vehicle.GetDescription()} - {vehicle.Cost()}");
+
+//Simple Factory
+
+//PizzaStore pizzaStore = new PizzaStore();
+//pizzaStore.OrderPizza(PizzaType.Capricciosa);
+
+//Factory Method
+
+//MostarPizzaStore mostarPizzaStore = new MostarPizzaStore();
+//mostarPizzaStore.OrderPizza(PizzaType.Capricciosa);
+
+Logger logger = Logger.GetInstance();
+Logger logger2 = Logger.GetInstance();
+
+Console.WriteLine(logger.ToString());
+Console.WriteLine(logger2.ToString());
