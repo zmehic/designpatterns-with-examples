@@ -6,6 +6,7 @@
 //using DesignPatterns.Strategy;
 using DesignPatterns.AdapterFacade;
 using DesignPatterns.AdapterFacade.Interfaces;
+using DesignPatterns.Template;
 //using DesignPatterns.Command.SimpleRemoteControl;
 //using DesignPatterns.Command.SimpleRemoteControl.CeilingFan;
 //using DesignPatterns.Command.SimpleRemoteControl.CeilingFan.Commands;
@@ -118,13 +119,23 @@ using DesignPatterns.AdapterFacade.Interfaces;
 
 //Adapter
 
-GoldenRetreiver goldenRetreiver = new GoldenRetreiver();
+//GoldenRetreiver goldenRetreiver = new GoldenRetreiver();
 
-Cat catAdapter = new DogAdapter(goldenRetreiver);
+//Cat catAdapter = new DogAdapter(goldenRetreiver);
 
-catAdapter.Meow();
-catAdapter.Run();
+//catAdapter.Meow();
+//catAdapter.Run();
 
-HomeTheaterFacade homeTheaterFacade = new HomeTheaterFacade(new Screen(), new Lights(), new Stereo());
+////Facade
 
-homeTheaterFacade.WatchMovie();
+//HomeTheaterFacade homeTheaterFacade = new HomeTheaterFacade(new Screen(), new Lights(), new Stereo());
+
+//homeTheaterFacade.WatchMovie();
+
+//Template
+
+CoffeeTemplate coffee = new CoffeeTemplate();
+TeaTemplate tea = new TeaTemplate();
+
+coffee.PrepareBeverage();
+tea.PrepareBeverage();
