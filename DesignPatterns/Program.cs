@@ -6,7 +6,11 @@
 //using DesignPatterns.Strategy;
 using DesignPatterns.AdapterFacade;
 using DesignPatterns.AdapterFacade.Interfaces;
+using DesignPatterns.Iterator;
+using DesignPatterns.Iterator.Menus;
 using DesignPatterns.Template;
+using System.Collections;
+using System.Net.WebSockets;
 //using DesignPatterns.Command.SimpleRemoteControl;
 //using DesignPatterns.Command.SimpleRemoteControl.CeilingFan;
 //using DesignPatterns.Command.SimpleRemoteControl.CeilingFan.Commands;
@@ -132,10 +136,39 @@ using DesignPatterns.Template;
 
 //homeTheaterFacade.WatchMovie();
 
-//Template
+////Template
 
-CoffeeTemplate coffee = new CoffeeTemplate();
-TeaTemplate tea = new TeaTemplate();
+//CoffeeTemplate coffee = new CoffeeTemplate();
+//TeaTemplate tea = new TeaTemplate();
 
-coffee.PrepareBeverage();
-tea.PrepareBeverage();
+//coffee.PrepareBeverage();
+//tea.PrepareBeverage();
+
+//Iterator
+
+//ArrayList menus = new ArrayList
+//{
+//    new MechanicMenu(),
+//    new PaintshopMenu(),
+//};
+
+//Webshop webshop = new Webshop(menus);
+
+//webshop.PrintMenu();
+
+////Composite
+
+//MenuComponent pancakeHouseMenu = new ShopMenu("Pancake house menu", "Desc");
+//MenuComponent dinerMenu = new ShopMenu("Diner menu", "Desc");
+//MenuComponent dessertMenu = new ShopMenu("Desert menu", "Desc");
+
+//MenuComponent allMenus = new ShopMenu("ALL MENUS", "ALL MENUS");
+
+//allMenus.Add(pancakeHouseMenu);
+//allMenus.Add(dinerMenu);
+
+//pancakeHouseMenu.Add(dessertMenu);
+//dessertMenu.Add(new MenuItem("Pie", "Pie dessert", true, 113));
+
+//Webshop webshop = new Webshop(allMenus);
+//webshop.PrintMenu();
